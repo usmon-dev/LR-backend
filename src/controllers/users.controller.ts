@@ -17,7 +17,7 @@ import { verifyToken, verifyAdminToken } from "../middleware/middleware";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import "dotenv/config";
-import { getFormattedDateAndTime } from "../utils/defaults";
+import { getFormattedDateAndTime } from "../utilities/defaults";
 
 const usersCollection = collection(db, "users");
 const JWT_SECRET = process.env.JWT_SECRET || "";
